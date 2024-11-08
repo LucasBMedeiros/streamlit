@@ -5,10 +5,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-
-
-
 # Dashboard Title
 st.title("Interactive Dashboard with Streamlit")
 
@@ -17,11 +13,6 @@ np.random.seed(0)
 data = np.random.rand(10, 5)
 columns = [f"Metric {i}" for i in range(1, 6)]
 df = pd.DataFrame(data, columns=columns)
-
-
-
-
-
 
 ## Charts
 # Heatmap Section
@@ -33,10 +24,6 @@ st.pyplot(fig)
 # Table Section
 st.header("Metrics Table")
 st.dataframe(df)
-
-
-
-
 
 ## Sidebar, interactions
 # Sidebar with Selectbox
